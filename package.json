@@ -1,0 +1,18 @@
+{
+  "name": "claude-routines-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox for Claude Code Routines tutorials",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "lodash": "4.17.20",
+    "axios": "0.21.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
