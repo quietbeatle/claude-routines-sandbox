@@ -24,7 +24,14 @@ app.get('/add', (req, res) => {
   res.json({ result });
 });
 
-module.exports = { app, add, subtract };
+const divide = (a, b) => a / b;
+
+   app.get('/divide', (req, res) => {
+     const result = divide(Number(req.query.a), Number(req.query.b));
+     res.json({ result });
+   });
+
+   module.exports = { app, add, subtract, divide };
 
 if (require.main === module) {
   app.listen(3000, () => console.log('Server on 3000'));
