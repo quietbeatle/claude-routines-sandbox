@@ -29,3 +29,8 @@ module.exports = { app, add, subtract };
 if (require.main === module) {
   app.listen(3000, () => console.log('Server on 3000'));
 }
+// 의도적으로 input validation이 부족한 endpoint 추가
+app.get('/user/:id', (req, res) => {
+  const userId = req.params.id;
+  res.send(`User ID: ${userId}`);
+});
