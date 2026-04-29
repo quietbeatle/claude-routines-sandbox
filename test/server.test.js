@@ -13,3 +13,7 @@ test('subtract: 5 - 3 = 2', () => {
 test('add: handles negative numbers', () => {
   assert.strictEqual(add(-1, -2), -3);
 });
+
+test('intentionally failing test', () => {
+    expect(1 + 1).toBe(3);
+  });
